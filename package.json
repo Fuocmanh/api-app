@@ -2,7 +2,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-      "composer install": "composer install",
+        "composer install": "composer install",
+        "key:generate": "php artisan key:generate",
         "refresh db": "php artisan migrate:refresh --seed",
         "start": "php artisan serve"
     },
