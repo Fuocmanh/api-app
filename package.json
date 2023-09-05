@@ -2,10 +2,9 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "start": "php artisan serve",
-        "refresh db": "php artisan migrate:refresh --seed"
+      "composer install": "composer install",
+        "refresh db": "php artisan migrate:refresh --seed",
+        "start": "php artisan serve"
     },
     "devDependencies": {
         "axios": "^1.1.2",
