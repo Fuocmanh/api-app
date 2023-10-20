@@ -13,7 +13,7 @@ class UserController extends BaseController
      */
     public function index()
     {
-        $data = Member::paginate(10);
+        $data = Member::get();
         if ($data) {
             $response = $this->sendResponse($data);
         } else {

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\RoleController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 Route::resource("users",UserController::class);
+Route::resource("roles",RoleController::class);
